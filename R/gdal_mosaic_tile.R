@@ -1,4 +1,4 @@
-#' GDAL_mosaic_tile
+#' gdal_mosaic_tile
 #' Mosaic raster tiles
 #'
 #' @param output_file Path and filename of the mosaicked output (format "E:/Folder/file.tif")
@@ -6,14 +6,13 @@
 #' @param return_raster Return raster.
 #' @param large_tif Use \code{large_tif = TRUE} for large rasters (>4GB)
 #'
-#' @return Raster.
+#' @return raster.
 #' @export
 #'
-#' @examples None.
 #' @importFrom pkgmaker file_extension
 #' @importFrom raster raster
 #'
-GDAL_mosaic_tile <- function(output_file, folder_path, return_raster = TRUE, large_tif = TRUE)
+gdal_mosaic_tile <- function(output_file, folder_path, return_raster = TRUE, large_tif = TRUE)
 {
 
   buildVRT <- paste0("gdalbuildvrt", " ", gsub(pkgmaker::file_extension(output_file),

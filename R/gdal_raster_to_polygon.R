@@ -1,4 +1,4 @@
-#' GDAL_raster_to_polygon
+#' gdal_raster_to_polygon
 #' Convert raster to polygon
 #' @param input_raster Raster* file or path of raster file on disk
 #' @param output_file Path of new shapefile
@@ -7,7 +7,7 @@
 #'
 #'
 #'
-GDAL_raster_to_polygon <- function(input_raster, output_file, return_shp = FALSE)
+gdal_raster_to_polygon <- function(input_raster, output_file, return_shp = FALSE)
 {
   # Add inherits check
   if (inherits(input_raster, "Raster"))

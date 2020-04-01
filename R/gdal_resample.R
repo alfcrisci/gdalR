@@ -1,10 +1,10 @@
-#' GDAL_resample
+#' gdal_resample
 #'
 #' Function does a system call to run gdal functions (works on unix systems where gdal can be called from terminal).
 #' Use only file path, function will not work with raster objects loaded in R environment.
 #'
 #' @param infile character  Raster to be cropped (file path or Raster object). Input raster should be stored on disk for GDAL access.
-#' @param outfile character Path and filename of the mosaicked output (format "E:/Folder/file.tif").
+#' @param outfile character Path and filename of the mosaicked output.
 #' @param resolutions  numeric ResX e ResY as vector.
 #' @param target_extent character New extent as xmin ymin xmax ymax".
 #' @param method character Resampling method. One in c("near", "bilinear", "cubic", "cubicspline", "lanczos",
@@ -19,7 +19,7 @@
 #' @importFrom tools file_ext
 #'
 
-GDAL_resample <- function(infile, outfile, resolutions, target_extent, method, large_tif = FALSE, return_raster = FALSE)
+gdal_resample <- function(infile, outfile, resolutions, target_extent, method, large_tif = FALSE, return_raster = FALSE)
 {
 
  if (!method %in% c("near", "bilinear", "cubic", "cubicspline", "lanczos",

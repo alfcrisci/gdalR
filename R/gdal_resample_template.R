@@ -1,3 +1,4 @@
+#' gdal_resample_template
 #' Resampling a Raster* object via GDAL
 #'
 #' @param r Raster* object to be resampled

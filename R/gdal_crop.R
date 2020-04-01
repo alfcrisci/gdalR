@@ -1,4 +1,4 @@
-#' GDAL_crop
+#' gdal_crop
 #' Crop raster
 #'
 #' The function crops rasters (to the shapefile boundary) using GDAL. Use only filepaths (not rasters/shapefiles loaded in R environment).
@@ -18,13 +18,13 @@
 #' library(gdalR)
 #' library(Rahat)
 #'
-#' we_eu <- milkunize("Projects/Land_use/Data/Shapefile/IMAGE_regions/Individual_regions/Western_Europe_IMAGE.shp")
+#' we_eu <- milkunize("Western_Europe_IMAGE.shp")
 #' dem <- milkunize("Merit_DEM_10s.tif", "m5")
 #'
 #' # Crop dem
 #' dem_cropped <- GDAL_crop(dem, filename = "/vol/milkun1/Mirza_Cengic/Temp/dem_we.tif", shapefile_path = we_eu)
 
-GDAL_crop <- function(input_raster, filename, shapefile_path, large_tif = FALSE, return_raster = TRUE)
+gdal_crop <- function(input_raster, filename, shapefile_path, large_tif = FALSE, return_raster = TRUE)
 {
 
   if (missing(filename))
