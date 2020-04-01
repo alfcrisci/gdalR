@@ -1,9 +1,4 @@
-############################################
-# Function to merge the tiled rasters back together
-# Output file - path and filename of the mosaicked output (format "E:/Folder/file.tif")
-# Folder path - folder path with the tif files to be mosaiced (format "E:/Folder/*.tif")
-# argument large_tif = TRUE for large rasters (>4GB)
-#
+#' GDAL_mosaic_tile
 #' Mosaic raster tiles
 #'
 #' @param output_file Path and filename of the mosaicked output (format "E:/Folder/file.tif")

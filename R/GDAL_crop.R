@@ -1,5 +1,4 @@
-# GDAL_crop function draft #####################
-
+#' GDAL_crop
 #' Crop raster
 #'
 #' The function crops rasters (to the shapefile boundary) using GDAL. Use only filepaths (not rasters/shapefiles loaded in R environment).

@@ -2,10 +2,16 @@
 % Please edit documentation in R/GDAL_crop.R
 \name{GDAL_crop}
 \alias{GDAL_crop}
-\title{Crop raster}
+\title{GDAL_crop
+Crop raster}
 \usage{
-GDAL_crop(input_raster, filename, shapefile_path, large_tif = FALSE,
-  return_raster = TRUE)
+GDAL_crop(
+  input_raster,
+  filename,
+  shapefile_path,
+  large_tif = FALSE,
+  return_raster = TRUE
+)
 }
 \arguments{
 \item{input_raster}{Character. Raster to be cropped (file path or Raster object). Input raster should be stored on disk for GDAL access.}

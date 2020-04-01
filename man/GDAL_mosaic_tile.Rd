@@ -2,10 +2,15 @@
 % Please edit documentation in R/GDAL_mosaic_tile.R
 \name{GDAL_mosaic_tile}
 \alias{GDAL_mosaic_tile}
-\title{Mosaic raster tiles}
+\title{GDAL_mosaic_tile
+Mosaic raster tiles}
 \usage{
-GDAL_mosaic_tile(output_file, folder_path, return_raster = TRUE,
-  large_tif = TRUE)
+GDAL_mosaic_tile(
+  output_file,
+  folder_path,
+  return_raster = TRUE,
+  large_tif = TRUE
+)
 }
 \arguments{
 \item{output_file}{Path and filename of the mosaicked output (format "E:/Folder/file.tif")}
@@ -20,6 +25,7 @@ GDAL_mosaic_tile(output_file, folder_path, return_raster = TRUE,
 Raster.
 }
 \description{
+GDAL_mosaic_tile
 Mosaic raster tiles
 }
 \examples{
